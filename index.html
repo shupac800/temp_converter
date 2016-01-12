@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CONVERTER</title>
+</head>
+
+<body>
+
+  <form id="cOrF_form">
+    Temperature to convert: 
+    <input type="text" size=3 id="inputTemp">
+    <br>
+    <input type="radio" name="cOrF" id="isCelcius">Celcius
+    <input type="radio" name="cOrF" checked="true">Fahrenheit
+    <br>
+    <input type="button" onclick="display_to_console()"  id="submitButton" name="submitButton" value="Submit">
+    <br>
+    <input type="button" onclick="clear_input()" name="clearButton" value="Clear">
+  </form>
+
+  Converted temperature is: <span id="convertedTemperature"></span>
+
+  <script src="converter.js"></script> <!-- this has to be last element before /body -->
+</body>
+
+</html>
