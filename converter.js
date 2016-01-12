@@ -1,8 +1,8 @@
 
 function clear_input() {
   document.getElementById("inputTemp").value = null;
-  document.getElementById("buttonCelcius").checked = false;
-  document.getElementById("buttonFahrenheit").checked = false;
+  // document.getElementById("buttonCelcius").checked = false;
+  // document.getElementById("buttonFahrenheit").checked = false;
   
 }
 
@@ -40,5 +40,7 @@ function calculate() {
   }
 
   console.log("convertedTemperature",convertedTemperature.innerHTML);
+
+  return false;  // don't refresh page
 
 }

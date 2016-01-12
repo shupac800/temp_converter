@@ -8,12 +8,12 @@
 
 <body>
 
-  <form id="cOrF_form">
+  <form>
     Temperature to convert: 
-    <input type="text" size=3 id="inputTemp">
+    <input type="text" size=3 id="inputTemp" onkeydown="if (event.keyCode == 13) {event.preventDefault; calculate(); return false}">
     <br>
     <input type="radio" name="cOrF" id="buttonCelcius">Celcius
-    <input type="radio" name="cOrF" id="buttonFahrenheit">Fahrenheit
+    <input type="radio" name="cOrF" id="buttonFahrenheit" checked="true">Fahrenheit
     <br>
     <input type="button" onclick="calculate()"  id="submitButton" name="submitButton" value="Submit">
     <input type="button" onclick="clear_input()" name="clearButton" value="Clear">
